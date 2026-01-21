@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SURMA GROUP - Landing Page</title>
+<style>
+/* Reset & Body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Centered Header */
+header {
+    padding: 60px 20px 30px 20px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0d6efd;
+    transition: color 0.3s ease;
+}
+
+/* Dark Mode Button */
+.dark-mode-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+.dark-mode-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Grid Container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 30px 20px 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Box Cards */
+.box {
+    background-color: #fff;
+    padding: 25px 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    background-color: #e8f0fe;
+}
+.box h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #0d6efd;
+    transition: all 0.3s ease;
+}
+.box:hover h2 {
+    color: #0056b3;
+}
+.box p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e9ecef;
+    color: #555;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ddd;
+}
+body.dark-mode header {
+    color: #4dabf5;
+}
+body.dark-mode .box {
+    background-color: #1e1e1e;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
+body.dark-mode .box:hover {
+    background-color: #2a2a2a;
+}
+body.dark-mode .box h2 {
+    color: #4dabf5;
+}
+body.dark-mode .box p {
+    color: #ccc;
+}
+body.dark-mode footer {
+    background-color: #1a1a1a;
+    color: #aaa;
+}
+
+/* Responsive */
+@media(max-width: 500px){
+    header {
+        font-size: 2rem;
+    }
+    .box h2 {
+        font-size: 1.1rem;
+    }
+    .box p {
+        font-size: 0.9rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Dark Mode Button -->
+<button class="dark-mode-btn" id="darkModeBtn">🌙 Dark Mode</button>
+
+<!-- Centered Header -->
+<header>SURMA GROUP</header>
+
+<!-- Boxes -->
+<div class="container">
+    <div class="box" onclick="window.location.href='#'">
+        <h2>SALE</h2>
+        <p>Structural Architect Land Expert</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>SAFE</h2>
+        <p>Soul Agro Food Essential</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>MEDICA</h2>
+        <p>Medix Divine Care</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>EASY</h2>
+        <p>Express All Shipment Yonder</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>PILL</h2>
+        <p>Prescriptionzone Int. LTD</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>SUTA</h2>
+        <p>Suave Trend Apparel</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>WISE</h2>
+        <p>Webtel IT Solution Expert</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>Glophone</h2>
+        <p>Communication & Tech Solutions</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>Alapon</h2>
+        <p>Local Brand Identity</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>Alishan</h2>
+        <p>Brand & Lifestyle</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>Voice TV</h2>
+        <p>Media & Broadcasting</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>Voice TV Archive</h2>
+        <p>Past Media Content</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>GUARD</h2>
+        <p>Guardian Arm Defence</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>TRADE</h2>
+        <p>Trusted Return And Deal Exchange</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>EP</h2>
+        <p>Employees Profile Sheet</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>SEBA</h2>
+        <p>Service Excellent By Aim</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>TAMAK</h2>
+        <p>Tobacco Asset Manufacture And Kings</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>POSHAK</h2>
+        <p>Professional Order And Supply House Apparel Keeping</p>
+    </div>
+    <div class="box" onclick="window.location.href='#'">
+        <h2>B.K Builders</h2>
+        <p>Construction & Real Estate</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    &copy; 2026 SURMA GROUP. All Rights Reserved.
+</footer>
+
+<script>
+const darkBtn = document.getElementById('darkModeBtn');
+darkBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    darkBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+});
+</script>
+
+</body>
+</html>
